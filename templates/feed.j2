@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Rob’s Blog</title>
+        <link>https://blog.robstenson.com</link>
+        <description>It’s Rob’s blog.</description>
+        <atom:link href="https://blog.robstenson.com/feed.xml" rel="self"></atom:link>
+        <language>en-us</language>
+        <lastBuildDate>{{ build }}</lastBuildDate>
+        {% for post in posts %}
+        <item>
+            <title>{{ post[0] }}</title>
+            <link>https://blog.robstenson.com/posts/{{ post[0] }}.html</link>
+            <description>Unknown</description>
+            <guid>https://blog.robstenson.com/posts/{{ post[0] }}.html</guid>
+        </item>
+        {% endfor %}
+    </channel>
+</rss>

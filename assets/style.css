@@ -1,0 +1,18 @@
+body {
+    background: white;
+    font-family: source-serif-pro, sans-serif;
+}
+
+#main {
+    max-width: 350px;
+    margin: auto auto;
+}
+
+.post h3 {
+    font-weight: 900;
+    font-style: italic;
+}
+
+.post {
+    margin-bottom: 50px;
+}

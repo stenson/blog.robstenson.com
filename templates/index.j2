@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="alternate" type="application/atom+xml" title="Rob’s Blog Feed" href="/feed.xml">
+  <title>Rob’s Blog</title>
+  <link rel="stylesheet" href="https://use.typekit.net/pym2cca.css">
+  <link href="/assets/style.css" rel="stylesheet">
+</head>
+<body>
+<div id="main">
+{% for post in posts %}
+    <div class="post">
+        <h3><a href="/posts/{{ post[0] }}.html">{{ post[0] }}</a></h3>
+        <div>
+            {{ post[1] }}
+        </div>
+    </div>
+{% endfor %}
+</div>
+</body>
