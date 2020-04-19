@@ -4,8 +4,22 @@ body {
 }
 
 #main {
-    max-width: 350px;
+    max-width: 450px;
     margin: auto auto;
+}
+
+.post-link {
+    background: deeppink;
+    color: white;
+    text-decoration: none;
+}
+
+.post-link:hover {
+    background: royalblue;
+}
+
+.post-link em {
+    font-size: 14px;
 }
 
 .post h3 {
@@ -15,4 +29,9 @@ body {
 
 .post {
     margin-bottom: 50px;
+}
+
+hr {
+    border: none;
+    border-bottom: 1px solid #eee;
 }

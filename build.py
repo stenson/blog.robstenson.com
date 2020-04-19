@@ -1,15 +1,17 @@
-import markdown, jinja2
+import markdown, jinja2, frontmatter
 from pathlib import Path
 from shutil import copytree
 from time import time
 from datetime import datetime
 
+
 postsdir = Path("posts")
 posts = []
 
 for post in reversed(sorted(postsdir.glob("*.md"))):
-    html = markdown.markdown(post.read_text(), extensions=["smarty"])
-    posts.append([post.stem, html])
+    _post = frontmatter.loads(post.read_text())
+    _post.content = markdown.markdown(_post.content, extensions=["smarty"])
+    posts.append([post.stem, _post])
 
 print([p[0] for p in posts])
 

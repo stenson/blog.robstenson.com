@@ -12,10 +12,8 @@
 <div id="main">
 {% for post in posts %}
     <div class="post">
-        <h3><a href="/posts/{{ post[0] }}.html">{{ post[0] }}</a></h3>
-        <div>
-            {{ post[1] }}
-        </div>
+        <h1><a class="post-link" href="/posts/{{ post[0] }}.html">{{ post[1]["title"] }} <em>({{ post[0] }})</em></a></h3>
+        
     </div>
 {% endfor %}
 </div>

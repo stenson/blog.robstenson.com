@@ -9,7 +9,7 @@
         <lastBuildDate>{{ build }}</lastBuildDate>
         {% for post in posts %}
         <item>
-            <title>{{ post[0] }}</title>
+            <title>{{ post[1]["title"] }}</title>
             <link>https://blog.robstenson.com/posts/{{ post[0] }}.html</link>
             <description>Unknown</description>
             <guid>https://blog.robstenson.com/posts/{{ post[0] }}.html</guid>
