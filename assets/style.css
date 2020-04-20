@@ -9,17 +9,12 @@ body {
 }
 
 .post-link {
-    background: deeppink;
-    color: white;
-    text-decoration: none;
+    color: deeppink;
+    font-style: italic;
 }
 
 .post-link:hover {
-    background: royalblue;
-}
-
-.post-link em {
-    font-size: 14px;
+    color: royalblue;
 }
 
 .post h3 {
