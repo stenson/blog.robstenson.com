@@ -10,7 +10,7 @@ posts = []
 
 for post in reversed(sorted(postsdir.glob("*.md"))):
     _post = frontmatter.loads(post.read_text())
-    _post.content = markdown.markdown(_post.content, extensions=["smarty"])
+    _post.content = markdown.markdown(_post.content, extensions=["smarty", "mdx_linkify"])
     posts.append([post.stem, _post])
 
 print([p[0] for p in posts])
