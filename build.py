@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import markdown, jinja2, frontmatter
 from pathlib import Path
 from shutil import copytree
