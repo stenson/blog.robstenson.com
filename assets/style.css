@@ -9,8 +9,21 @@ body {
 }
 
 .post-link {
-    color: deeppink;
-    font-style: italic;
+    color: royalblue;
+}
+
+.post h1 {
+    font-family: hobeaux, source-serif-pro, sans-serif;
+}
+
+.post h1 em {
+    font-family: adobe-handwriting-frank, monospace;
+    font-size: 22px;
+}
+
+.hand {
+    font-family: adobe-handwriting-frank, monospace;
+    font-size: 18px;
 }
 
 .post-link:hover {
