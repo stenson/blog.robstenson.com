@@ -31,8 +31,7 @@ body {
 }
 
 .post h3 {
-    font-weight: 900;
-    font-style: italic;
+    font-family: adobe-handwriting-frank, monospace;
 }
 
 .post {
